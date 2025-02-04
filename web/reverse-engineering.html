@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            padding: 30px;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.5);
+        }
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background: #222;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.4);
+            text-align: left;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2 {
+            color: #ff512f;
+            border-bottom: 2px solid #ff512f;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.5);
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #dd2476, #ff512f);
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reverse Engineering</h1>
+    </header>
+    <div class="content">
+        <h2>What is Reverse Engineering?</h2>
+        <p>Reverse engineering is the process of analyzing software, hardware, or a system to understand its structure, functionality, and behavior.</p>
+
+        <h2>Applications of Reverse Engineering</h2>
+        <ul>
+            <li>Software debugging and vulnerability analysis.</li>
+            <li>Recovering lost source code.</li>
+            <li>Malware analysis and cyber threat research.</li>
+            <li>Understanding competitor technology.</li>
+            <li>Enhancing software compatibility and interoperability.</li>
+        </ul>
+
+        <h2>Tools for Reverse Engineering</h2>
+        <ul>
+            <li><strong>IDA Pro</strong> - Interactive disassembler and debugger.</li>
+            <li><strong>Ghidra</strong> - Open-source reverse engineering tool developed by NSA.</li>
+            <li><strong>Radare2</strong> - Open-source framework for reverse engineering.</li>
+            <li><strong>OllyDbg</strong> - Assembly-level debugger for Windows applications.</li>
+            <li><strong>Binwalk</strong> - Firmware analysis tool.</li>
+        </ul>
+
+        <h2>Reverse Engineering Process</h2>
+        <p>1. **Information Gathering:** Collecting information about the target system.</p>
+        <p>2. **Disassembly & Decompilation:** Converting machine code back into a human-readable format.</p>
+        <p>3. **Analysis:** Studying the internal components, functions, and behavior.</p>
+        <p>4. **Modification:** Making necessary changes to improve functionality or security.</p>
+        <p>5. **Recompilation & Testing:** Rebuilding and testing the modified software or system.</p>
+
+        <h2>Ethical Concerns in Reverse Engineering</h2>
+        <p>Reverse engineering must be performed within ethical and legal boundaries. Many software licenses prohibit reverse engineering, so it is essential to obtain proper authorization before engaging in such activities.</p>
+
+        <a href="home.html" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>

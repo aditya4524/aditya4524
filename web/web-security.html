@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            padding: 30px;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.5);
+        }
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background: #222;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.4);
+            text-align: left;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h2 {
+            color: #ff512f;
+            border-bottom: 2px solid #ff512f;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 87, 34, 0.5);
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #dd2476, #ff512f);
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Security</h1>
+    </header>
+    <div class="content">
+        <h2>Introduction to Web Security</h2>
+        <p>Web security refers to the protective measures and protocols used to secure websites and web applications from cyber threats.</p>
+
+        <h2>Common Web Security Threats</h2>
+        <ul>
+            <li>SQL Injection - Inserting malicious SQL queries into input fields.</li>
+            <li>Cross-Site Scripting (XSS) - Injecting scripts to steal user data.</li>
+            <li>Cross-Site Request Forgery (CSRF) - Forcing users to execute unintended actions.</li>
+            <li>Clickjacking - Tricking users into clicking something different from what they expect.</li>
+            <li>Insecure Direct Object References (IDOR) - Accessing unauthorized resources.</li>
+        </ul>
+
+        <h2>Best Practices for Web Security</h2>
+        <p>1. Validate and sanitize user inputs to prevent SQL Injection.</p>
+        <p>2. Use Content Security Policy (CSP) to mitigate XSS attacks.</p>
+        <p>3. Implement strong authentication methods like multi-factor authentication (MFA).</p>
+        <p>4. Regularly update software, libraries, and frameworks.</p>
+        <p>5. Encrypt sensitive data using HTTPS and secure encryption algorithms.</p>
+
+        <h2>Web Security Tools</h2>
+        <ul>
+            <li><strong>OWASP ZAP</strong> - Security scanning tool.</li>
+            <li><strong>Burp Suite</strong> - Web application security testing.</li>
+            <li><strong>Nikto</strong> - Web server vulnerability scanner.</li>
+            <li><strong>Wfuzz</strong> - Web application brute-force tool.</li>
+        </ul>
+
+        <h2>How to Secure Your Website</h2>
+        <p>1. Use **strong passwords** and enforce **secure authentication**.</p>
+        <p>2. Keep your **CMS, plugins, and themes updated**.</p>
+        <p>3. Set up **firewalls and intrusion detection systems**.</p>
+        <p>4. Conduct **regular security audits** and penetration tests.</p>
+
+        <a href="home.html" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
